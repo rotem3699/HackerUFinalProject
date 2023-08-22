@@ -1,0 +1,127 @@
+.cocktail-comp-container {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  height: 600px;
+}
+
+.cocktail-img {
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 10px 5px 15px rgb(217, 202, 129);
+}
+
+.cocktail-info-container {
+  width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  margin-left: 40px;
+}
+
+.single-cocktail-headline {
+  color: rgb(217, 202, 129);
+  font-family: "Lobster", cursive;
+  letter-spacing: 1.5px;
+}
+
+.cocktail-ingredients-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+ul {
+  height: 185px;
+}
+
+.single-cocktail-ingredients-headline {
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+.cocktail-ingredients-list > li,
+.single-cocktail-content,
+.cocktail-description {
+  font-family: "Cuprum", sans-serif;
+}
+
+.cocktail-ingredients-list > li {
+  font-size: 18px;
+}
+
+.cocktail-description {
+  font-size: 18px;
+}
+
+.span-favorite-icon {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.favorite-drink-icon {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .cocktail-img {
+    height: 200px;
+    width: auto;
+    box-shadow: 5px 5px 15px rgb(217, 202, 129);
+    border-radius: 50%;
+    margin-top: 100px;
+  }
+  .cocktail-comp-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .single-cocktail-headline:first-child {
+    font-size: 52px;
+    margin: 10px;
+  }
+  .cocktail-info-container > h5 {
+    font-size: 30px;
+  }
+  .cocktail-info-container > h6 {
+    font-size: 24px;
+  }
+  .cocktail-info-container > h3 {
+    font-size: 32px;
+  }
+  .cocktail-description {
+    font-size: 20px;
+  }
+  .cocktail-ingredients-list {
+    align-items: center;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cocktail-comp-container {
+    padding: 5px;
+  }
+
+  .cocktail-info-container,
+  .cocktail-comp-container {
+    width: 90%;
+  }
+
+  .single-cocktail-headline:first-child {
+    font-size: 34px;
+  }
+  .cocktail-info-container > h5 {
+    font-size: 22px;
+  }
+  .cocktail-info-container > h6 {
+    font-size: 20px;
+  }
+  .cocktail-info-container > h3 {
+    font-size: 30px;
+  }
+  .cocktail-description {
+    font-size: 18px;
+  }
+}

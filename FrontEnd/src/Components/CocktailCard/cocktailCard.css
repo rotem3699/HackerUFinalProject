@@ -1,0 +1,52 @@
+.single-similiar-cocktail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(234, 216, 143);
+  width: 200px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(76, 76, 76);
+  height: 250px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.similiar-cocktails-img {
+  width: 165px;
+  user-select: none;
+}
+
+.similiar-cocktails-name {
+  font-family: "Lobster", sans-serif;
+}
+
+.single-similiar-cocktail-content .favorite-drink-icon {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 30px;
+  color: wheat;
+  user-select: none;
+}
+
+.single-similiar-cocktail-content > h5 {
+  user-select: none;
+}
+
+/* .cocktail-card-wrapper {
+  cursor: pointer;
+} */
+
+@media screen and (max-width: 768px) {
+  .cocktail-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

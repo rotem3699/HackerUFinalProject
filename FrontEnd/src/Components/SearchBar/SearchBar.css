@@ -1,0 +1,129 @@
+.search-bar-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.search-suggest-container {
+  display: flex;
+  position: relative;
+  overflow: visible;
+}
+
+.search-bar-input {
+  width: 900px;
+  height: 45px;
+  font-family: "Lobster", cursive;
+  letter-spacing: 1px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.search-img {
+  width: 40px;
+  height: 40px;
+}
+
+.search-btn {
+  margin-left: 0.2vw;
+  width: 85px;
+  border-radius: 0.3vw;
+  border: 1px solid black;
+}
+
+.suggestions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+  top: 44px;
+  left: 0;
+  width: 100%;
+}
+
+.suggestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5px;
+  width: 100%;
+}
+
+.suggestion:hover {
+  background-color: #f6f6f6;
+}
+
+.suggestion:hover > p {
+  font-size: 14px;
+}
+
+.suggestion > p {
+  margin: 0px;
+  color: #000000;
+  font-size: 12px;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .search-bar-div {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .search-suggest-container {
+    width: 80%;
+  }
+
+  .search-bar-input {
+    width: 100%;
+    height: auto;
+  }
+
+  .search-btn {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+  }
+
+  .suggestion {
+    width: 98%;
+  }
+
+  .suggestion > p {
+    margin: 0px;
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .suggestion:nth-child(odd) {
+    background-color: #f6f6f6;
+  }
+}
+/* mobile */
+@media screen and (max-width: 480px) {
+  /* .search-btn {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+  }
+
+  .search-bar-input {
+    width: 230px;
+    height: auto;
+    font-family: "Lobster", cursive;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0;
+    padding-left: 10px;
+  } */
+}

@@ -1,0 +1,10 @@
+#cocktail-id-not-found-container {
+  margin: 200px;
+}
+
+#cocktail-id-not-found-container #cocktail-not-found-headline {
+  color: aliceblue;
+  font-family: "Cuprum", sans-serif;
+  text-align: center;
+  font-size: 70px;
+}

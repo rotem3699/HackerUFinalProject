@@ -1,0 +1,99 @@
+.about-us-comp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 60%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.about-us-comp-container::before {
+  background-image: url("../../images/about-us-cocktail-background.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+.about-us-headline {
+  position: relative;
+  font-size: 70px;
+  color: rgb(217 202 129);
+  font-family: "Cuprum", sans-serif;
+  text-shadow: 5px 5px 5px rgb(164, 126, 45);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.about-us-paragraph {
+  position: relative;
+  color: wheat;
+  font-size: 24px;
+  font-family: "Cuprum", sans-serif;
+  line-height: 45px;
+}
+
+.about-us-h3 {
+  position: relative;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  font-size: 38px;
+  color: rgb(217 202 129);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-shadow: 5px 5px 5px rgb(164, 126, 45);
+}
+
+.about-us-paragraph:last-child {
+  margin-top: 50px;
+  font-size: 28px;
+  border: 5px dashed rgb(216, 174, 66);
+  padding: 10px;
+  text-align: center;
+  font-family: "Cuprum", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  text-shadow: 5px 5px 20px rgb(207, 201, 201);
+  color: rgb(255, 248, 220);
+}
+
+@media screen and (max-width: 768px) {
+  .about-us-h3 {
+    text-align: center;
+  }
+  .about-us-comp-container::before {
+    background-size: auto;
+    background-repeat: repeat;
+    position: absolute;
+    right: -30px;
+  }
+  .about-us-comp-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us-comp-container::before {
+    left: -140px;
+  }
+  .about-us-headline {
+    font-size: 62px;
+    margin-bottom: 0px;
+  }
+  .about-us-paragraph {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .about-us-h3 {
+    font-size: 32px;
+  }
+  .about-us-paragraph:last-child {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,107 @@
+.form-user-details-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signin-form-container {
+  display: flex;
+  flex-direction: column;
+}
+.signin-form-go-to-signup {
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+  margin: 5px;
+  border: none;
+  background: none;
+  text-decoration: underline 3px rgb(217, 202, 129);
+}
+
+.signin-form-submit-btn,
+.label-input-wrap > input {
+  align-self: center;
+  border-radius: 5px;
+  border: solid 2px rgb(217, 202, 129);
+}
+
+.signin-form-submit-btn {
+  font-size: 18px;
+  font-family: "Lobster", cursive;
+  letter-spacing: 0.5px;
+}
+
+.signin-form-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.signin-form-h3 {
+  font-family: "Lobster";
+  text-align: center;
+  margin-top: 40px;
+}
+
+#signin-h5 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.field-and-hidden-no-field-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field-and-hidden-no-field-message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden-no-field-message {
+  color: red;
+  font-family: "Cuprum", sans-serif;
+}
+
+#no-email-and-password-message {
+  align-self: center;
+}
+
+#user-not-found-message {
+  align-self: center;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Cuprum", sans-serif;
+  line-height: 1.5;
+}
+
+#wrong-user-details-meassge {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .signin-form-h3,
+  .signin-form-container > .popup-headline {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-user-details-container {
+    flex-direction: column;
+  }
+  .signin-form-container {
+    justify-content: flex-start;
+    gap: 15px;
+    height: inherit;
+  }
+  .signin-form-submit-btn {
+    height: auto;
+    width: 120px;
+  }
+  .label-input-wrap > input {
+    width: 175px;
+    height: 25px;
+  }
+  .label-input-wrap > label {
+    margin: 5px;
+  }
+}

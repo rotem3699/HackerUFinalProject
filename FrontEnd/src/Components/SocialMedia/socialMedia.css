@@ -1,0 +1,29 @@
+.social-media-paragraph {
+  color: rgb(217 202 129);
+  font-size: 24px;
+  font-family: "Cuprum", sans-serif;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .social-media-container {
+    position: relative;
+    top: 275px;
+    right: 275px;
+    display: flex;
+    width: 575px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .social-media-container {
+    flex-direction: column;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+  }
+  .social-media-paragraph {
+    font-size: 20px;
+  }
+}

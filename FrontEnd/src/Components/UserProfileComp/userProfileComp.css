@@ -1,0 +1,92 @@
+.user-profile-comp-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 80px 0px 80px 300px;
+  gap: 50px;
+}
+
+.user-profile-full-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-pic {
+  background-color: black;
+  border: solid 2px rgb(255, 220, 159);
+  width: 300px;
+}
+
+.user-profile-comp-parameter {
+  font-size: 34px;
+}
+
+.user-profile-details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  font-family: "Cuprum", sans-serif;
+  margin-top: 20px;
+  color: rgb(218, 202, 129);
+}
+
+.user-profile-detail-p {
+  font-size: 34px;
+}
+
+.user-page-log-out-btn {
+  width: 100px;
+  border-radius: 5px;
+  font-family: "Cuprum";
+  font-size: 22px;
+  background-color: inherit;
+  color: wheat;
+  border: solid 4px white;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .user-profile-comp-container {
+    padding: 20px;
+    border: dashed 2px white;
+    margin: 20px;
+    margin-bottom: 20px;
+  }
+  .user-profile-comp-parameter,
+  .user-profile-detail-p {
+    font-size: 26px;
+  }
+  .user-profile-pic {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .user-profile-comp-parameter,
+  .user-profile-detail-p {
+    font-size: 14px;
+    margin: 0px;
+  }
+  .user-profile-pic {
+    width: 100px;
+  }
+  .user-profile-full-details-container {
+    line-height: 35px;
+  }
+  .user-profile-comp-container {
+    gap: 10px;
+    overflow: scroll;
+  }
+  .user-profile-details-container {
+    gap: 5px;
+  }
+  .user-page-log-out-btn {
+    font-size: 14px;
+    width: 75px;
+    line-height: 16px;
+  }
+  .user-profile-page-container {
+    margin: 0px;
+  }
+}
