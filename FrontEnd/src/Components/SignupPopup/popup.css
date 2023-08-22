@@ -1,0 +1,54 @@
+.popup-input-container {
+  display: flex;
+  flex-direction: column;
+}
+.popup-headline-and-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-close-btn,
+.popup-close-img {
+  flex: 1;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: inherit;
+}
+.popup-headline {
+  flex: 35;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+.popup-h5 {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 26px;
+}
+
+.ReactModal__Overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#react-modal-style {
+  width: 700px;
+  height: 500px;
+  background-color: aqua;
+  border-radius: 8px;
+  /* transform: translate(80%, 40%); */
+  box-sizing: border-box;
+  position: static !important;
+  inset: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #react-modal-style {
+    width: 90%;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 480px) {
+}

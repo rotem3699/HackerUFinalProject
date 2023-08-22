@@ -1,0 +1,87 @@
+.users-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: "Cuprum";
+  text-align: center;
+  font-size: 22px;
+  width: 80%;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #dddddd;
+
+  padding: 8px;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: rgb(244, 238, 195);
+}
+
+.user-table tr:nth-child(odd) {
+  background-color: rgb(230, 213, 156);
+}
+
+.user-table tr:hover {
+  background-color: rgb(201, 184, 133);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.apply-button,
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.apply-button {
+  background-color: green;
+  color: white;
+}
+
+.edit-button {
+  background-color: orange;
+  color: white;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+.table-buttons-container > button {
+  margin-left: 10px;
+  width: 80px;
+}
+
+.role-radio {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .user-table th,
+  .user-table td {
+    font-size: 16px;
+  }
+  .table-buttons-container > button {
+    width: 55px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,39 @@
+.user-profile-page-container {
+  margin: 80px;
+  border: dashed 5px white;
+}
+
+.unauthorized-div {
+  color: aliceblue;
+  text-align: center;
+  font-size: 60px;
+  margin: 200px;
+}
+@media screen and (max-width: 768px) {
+  .user-profile-page-container {
+    width: 100%;
+    margin: 0px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .user-profile-details-container {
+    margin-top: 0px;
+  }
+  .unauthorized-div {
+    font-size: 46px;
+    padding: 10px;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .user-profile-details-container {
+    margin-top: 0px;
+  }
+  .unauthorized-div {
+    font-size: 24px;
+    padding: 10px;
+    margin: 0px;
+  }
+}

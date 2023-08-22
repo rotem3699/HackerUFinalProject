@@ -1,0 +1,104 @@
+.contact-us-comp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 60%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.contact-us-comp-container::before {
+  background-image: url("../../images/contact-us-cocktail-background.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+.contact-us-headline {
+  position: relative;
+  font-size: 70px;
+  color: rgb(217 202 129);
+  font-family: "Cuprum", sans-serif;
+  text-shadow: 5px 5px 5px rgb(164, 126, 45);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.contact-us-paragraph {
+  position: relative;
+  color: wheat;
+  font-size: 24px;
+  font-family: "Cuprum", sans-serif;
+  line-height: 45px;
+}
+
+.contact-us-h3 {
+  position: relative;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  font-size: 38px;
+  color: rgb(217 202 129);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-shadow: 5px 5px 5px rgb(164, 126, 45);
+}
+
+.contact-us-emails-span {
+  font-weight: 600;
+  color: rgb(255, 250, 191);
+}
+
+.contact-us-paragraph:last-child {
+  margin-top: 50px;
+  font-size: 28px;
+  border: 5px dotted rgb(216, 174, 66);
+  padding: 10px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  text-shadow: 5px 5px 20px rgb(207, 201, 201);
+  color: rgb(255, 248, 220);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us-h3 {
+    text-align: center;
+  }
+  .contact-us-comp-container::before {
+    background-size: auto;
+    background-repeat: repeat;
+    position: absolute;
+    right: -30px;
+    mix-blend-mode: plus-lighter;
+  }
+  .contact-us-comp-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us-comp-container::before {
+    left: -140px;
+  }
+  .contact-us-headline {
+    font-size: 52px;
+  }
+  .contact-us-paragraph {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .contact-us-h3 {
+    font-size: 32px;
+  }
+  .contact-us-paragraph:last-child {
+    font-size: 18px;
+  }
+}
